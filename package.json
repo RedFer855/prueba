@@ -1,0 +1,24 @@
+{
+  "name": "prueba",
+  "version": "1.0.0",
+  "description": "esto es una prueba",
+  "homepage": "https://github.com/RedFer855/prueba#readme",
+  "bugs": {
+    "url": "https://github.com/RedFer855/prueba/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RedFer855/prueba.git"
+  },
+  "license": "ISC",
+  "author": "redfer855",
+  "type": "commonjs",
+  "main": "index.html",
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
