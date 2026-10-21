@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap demo</title>
   <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
@@ -17,119 +18,130 @@
   </div>
   <div class="container">
 
-    <div class="row mb-4">
-      <div class="col-12 col-md-4 col-md-6 border">
-        <section class="card mx-auto" style="max-width: 320px">
-          <img src="https://picsum.photos/seed/cafe1/600/400" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-              content.</p>
-            <a href="#" class="btn-solid theme-primary">Go somewhere</a>
-          </div>
-        </section>
+    <div class="d-flex">
+      <div class="col-sm-4">
+        <p>
+        <h3>¿Cómo funciona?</h3>
+        <p>Buscá los hoteles de acuerdo a tu prefencia.</p>
+        </p>
       </div>
-      <div class="col-12 col-md-4 col-md-6 border">
-        <section class="card mx-auto" style="max-width: 320px">
-          <img src="https://picsum.photos/seed/cafe2/600/400" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-              content.</p>
-            <a href="#" class="btn-solid theme-primary">Go somewhere</a>
-          </div>
-        </section>
+      <div class="col-sm-4">
+        <p>
+        <h3>¿Dónde puedo reservar?</h3>
+        <p>Elegía la ciudad que te interese y luego realizá la reserva con tus datos.</p>
+        </p>
       </div>
-      <div class="col-12 col-md-4 col-md-6 border">
-        <section class="card mx-auto" style="max-width: 320px">
-          <img src="https://picsum.photos/600/400" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-              content.</p>
-            <a href="#" class="btn-solid theme-primary">Go somewhere</a>
-          </div>
+      <div class="col-sm-4">
+        <p>
+        <h3>¿Cómo pago?</h3>
+        <p>Utilizá tu tarjeta favorita.</p>
+        </p>
         </section>
       </div>
     </div>
 
-    <div class="row mb-4">
-      <div class="col-12 col-md-4 col-md-6 border">
-        <section class="card mx-auto" style="max-width: 320px">
-          <img src="https://picsum.photos/seed/cafe1/600/400" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-              content.</p>
-            <a href="#" class="btn-solid theme-primary">Go somewhere</a>
-          </div>
-        </section>
+    <div class="d-flex flex-wrap flex-row-reverse">
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div>
+          <h4>Hotel Barcelona</h4>
+          <p>Hotel ubicado en pleno centro de Barcelona a pocos metros de la playa.</p>
+        </div>
+        <div>
+          <button class="btn btn-primary btn-reserva">Reservar</button>
+        </div>
       </div>
-      <div class="col-12 col-md-4 col-md-6 border">
-        <section class="card mx-auto" style="max-width: 320px">
-          <img src="https://picsum.photos/seed/cafe2/600/400" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-              content.</p>
-            <a href="#" class="btn-solid theme-primary">Go somewhere</a>
-          </div>
-        </section>
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div>
+          <h4>Hotel Buenos Aires</h4>
+          <p>Hotel ubicado en pleno centro.</p>
+        </div>
+        <div>
+          <button class="btn btn-primary btn-reserva">Reservar</button>
+        </div>
       </div>
-      <div class="col-12 col-md-4 col-md-6 border">
-        <section class="card mx-auto" style="max-width: 320px">
-          <img src="https://picsum.photos/600/400" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-              content.</p>
-            <a href="#" class="btn-solid theme-primary">Go somewhere</a>
-          </div>
-        </section>
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div>
+          <h4>Hotel Rio de Janeiro</h4>
+          <p>Hotel ubicado en pleno centro.</p>
+        </div>
+        <div>
+          <button class="btn btn-primary btn-reserva">Reservar</button>
+        </div>
+      </div>
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div>
+          <h4>Rio de Janeiro</h4>
+          <p>Hotel ubicado en pleno centro de Rio de Janeiro a pocos metros de la playa</p>
+        </div>
+        <div>
+          <button class="btn btn-primary btn-reserva">Reservar</button>
+        </div>
+      </div>
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div>
+          <h4>Hotel de Islas Canarias</h4>
+          <p>Hotel ubicado en pleno centro de Rio de Janeiro a pocos metros de la playa</p>
+        </div>
+        <div>
+          <button class="btn btn-primary btn-reserva">Reservar</button>
+        </div>
+      </div>
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div>
+          <h4>Hotel de Madrid</h4>
+          <p>Hotel ubicado en pleno centro de Rio de Janeiro a pocos metros de la playa</p>
+        </div>
+        <div>
+          <button class="btn btn-primary btn-reserva">Reservar</button>
+        </div>
+      </div>
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div>
+          <h4>Hotel de Hawai</h4>
+          <p>Hotel ubicado en pleno centro de Rio de Janeiro a pocos metros de la playa</p>
+        </div>
+        <div>
+          <button class="btn btn-primary btn-reserva">Reservar</button>
+        </div>
+      </div>
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div>
+          <h4>Hotel de Utila</h4>
+          <p>Hotel ubicado en pleno centro de Rio de Janeiro a pocos metros de la playa</p>
+        </div>
+        <div>
+          <button class="btn btn-primary btn-reserva">Reservar</button>
+        </div>
       </div>
     </div>
-
-    <div class="row mb-4">
-      <div class="col-12 col-md-4 col-md-6 border">
-        <section class="card mx-auto" style="max-width: 320px">
-          <img src="https://picsum.photos/seed/cafe1/600/400" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-              content.</p>
-            <a href="#" class="btn-solid theme-primary">Go somewhere</a>
-          </div>
-        </section>
-      </div>
-      <div class="col-12 col-md-4 col-md-6 border">
-        <section class="card mx-auto" style="max-width: 320px">
-          <img src="https://picsum.photos/seed/cafe2/600/400" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-              content.</p>
-            <a href="#" class="btn-solid theme-primary">Go somewhere</a>
-          </div>
-        </section>
-      </div>
-      <div class="col-12 col-md-4 col-md-6 border">
-        <section class="card mx-auto" style="max-width: 320px">
-          <img src="https://picsum.photos/600/400" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-              content.</p>
-            <a href="#" class="btn-solid theme-primary">Go somewhere</a>
-          </div>
-        </section>
-      </div>
-    </div>
-
-
   </div>
+  </div>
+  <footer class="footer">
+    <div class="row">
+      <div class="col-sm-4 d-flex flex-column">
+        <a href="https//www.facebook.com">Facebook</a>
+        <a href="https//www.x.com">X</a>
+        <a href="https//www.instagram.com">Instagram</a>
+        <a href="https//www.google.com">Google</a>
+      </div>
+      <div class="col-sm-4 d-flex flex-column aling-items-end">
+        <address>
+          <h3>Oficina Central</h3>
+          <p>Tegucigalpa, MDC 1241,Honduras</p>
+          <p>+(504) 9480-7460</p>
+          <p>fbarahona280@gmail.com</p>
+        </address>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 d-flex flex-column aling-items-end">
+          <a href="https//www.facebook.com">Nosotros</a>
+          <a href="https//www.twitter.com">Precios</a>
+          <a href="https//www.instagram.com">Terminos y Condiciones</a>
+          <a href="https//www.google.com">Contacto</a>
+        </div>
 
-
-
+  </footer>
+  </div>
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/popper.js/dist/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
