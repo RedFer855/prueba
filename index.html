@@ -4,41 +4,56 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
+  <title>Hoteles</title>
   <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Hoteles</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="./about.html">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Precios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Términos y Condiciones</a></li>
+        <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
 
   <div class="jumbotron">
     <h1>Hoteles</h1>
   </div>
 
-  </div>
   <div class="container">
 
-    <div class="d-flex">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">Home</li>
+      </ol>
+    </nav>
+
+    <div class="row">
       <div class="col-sm-4">
-        <p>
         <h3>¿Cómo funciona?</h3>
-        <p>Buscá los hoteles de acuerdo a tu prefencia.</p>
-        </p>
+        <p>Buscá los hoteles de acuerdo a tu preferencia.</p>
       </div>
       <div class="col-sm-4">
-        <p>
         <h3>¿Dónde puedo reservar?</h3>
-        <p>Elegía la ciudad que te interese y luego realizá la reserva con tus datos.</p>
-        </p>
+        <p>Elegí la ciudad que te interese y luego realizá la reserva con tus datos.</p>
       </div>
       <div class="col-sm-4">
-        <p>
         <h3>¿Cómo pago?</h3>
         <p>Utilizá tu tarjeta favorita.</p>
-        </p>
-        </section>
       </div>
     </div>
+
+    <hr>
 
     <div class="d-flex flex-wrap flex-row-reverse">
       <div class="card-hotel d-flex flex-column justify-content-between">
@@ -115,33 +130,32 @@
       </div>
     </div>
   </div>
-  </div>
+
   <footer class="footer">
     <div class="row">
-      <div class="col-sm-4 d-flex flex-column">
-        <a href="https//www.facebook.com">Facebook</a>
-        <a href="https//www.x.com">X</a>
-        <a href="https//www.instagram.com">Instagram</a>
-        <a href="https//www.google.com">Google</a>
+      <div class="col-sm-4 d-flex flex-column align-items-start">
+        <a href="https://www.facebook.com">Facebook</a>
+        <a href="https://www.x.com">X</a>
+        <a href="https://www.instagram.com">Instagram</a>
+        <a href="https://www.google.com">Google</a>
       </div>
-      <div class="col-sm-4 d-flex flex-column aling-items-end">
+      <div class="col-sm-4 d-flex flex-column align-items-center">
         <address>
           <h3>Oficina Central</h3>
-          <p>Tegucigalpa, MDC 1241,Honduras</p>
+          <p>Tegucigalpa, MDC 1241, Honduras</p>
           <p>+(504) 9480-7460</p>
           <p>fbarahona280@gmail.com</p>
         </address>
       </div>
-      <div class="row">
-        <div class="col-sm-3 d-flex flex-column aling-items-end">
-          <a href="https//www.facebook.com">Nosotros</a>
-          <a href="https//www.twitter.com">Precios</a>
-          <a href="https//www.instagram.com">Terminos y Condiciones</a>
-          <a href="https//www.google.com">Contacto</a>
-        </div>
-
+      <div class="col-sm-4 d-flex flex-column align-items-end">
+        <a href="https://www.facebook.com">Nosotros</a>
+        <a href="https://www.twitter.com">Precios</a>
+        <a href="https://www.instagram.com">Términos y Condiciones</a>
+        <a href="https://www.google.com">Contacto</a>
+      </div>
+    </div>
   </footer>
-  </div>
+
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/popper.js/dist/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
