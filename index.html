@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hoteles</title>
   <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
 </head>
 
@@ -19,8 +20,8 @@
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="./about.html">Nosotros</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Precios</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Términos y Condiciones</a></li>
+        <li class="nav-item"><a class="nav-link" href="./precios.html">Precios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Términos y condiciones</a></li>
         <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
       </ul>
     </div>
@@ -55,77 +56,84 @@
 
     <hr>
 
+    <img src="imagenes/banner.jpg" class="img-fluid" alt="Responsive image">
+
     <div class="d-flex flex-wrap flex-row-reverse">
-      <div class="card-hotel d-flex flex-column justify-content-between">
-        <div>
-          <h4>Hotel Barcelona</h4>
-          <p>Hotel ubicado en pleno centro de Barcelona a pocos metros de la playa.</p>
+      <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+        <img class="card-img-top" src="imagenes/hotel-barcelona.jpg" alt="Hotel Barcelona">
+        <div class="card-body">
+          <h5 class="card-title">Hotel Barcelona</h5>
+          <h6 class="card-subtitle text-muted">España</h6>
+          <p class="card-text">Hotel ubicado en pleno centro de Barcelona a pocos metros de la playa.</p>
         </div>
-        <div>
-          <button class="btn btn-primary btn-reserva">Reservar</button>
-        </div>
-      </div>
-      <div class="card-hotel d-flex flex-column justify-content-between">
-        <div>
-          <h4>Hotel Buenos Aires</h4>
-          <p>Hotel ubicado en pleno centro.</p>
-        </div>
-        <div>
-          <button class="btn btn-primary btn-reserva">Reservar</button>
+        <div class="card-footer">
+          <button class="btn btn-primary btn-reserva"><span class="oi oi-plus"></span> Reservar</button>
         </div>
       </div>
-      <div class="card-hotel d-flex flex-column justify-content-between">
-        <div>
-          <h4>Hotel Rio de Janeiro</h4>
-          <p>Hotel ubicado en pleno centro.</p>
+      <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+        <img class="card-img-top" src="imagenes/hotel-buenos-aires.jpg" alt="Hotel Buenos Aires">
+        <div class="card-body">
+          <h5 class="card-title">Hotel Buenos Aires</h5>
+          <h6 class="card-subtitle text-muted">Argentina</h6>
+          <p class="card-text">Hotel ubicado en pleno centro.</p>
         </div>
-        <div>
-          <button class="btn btn-primary btn-reserva">Reservar</button>
-        </div>
-      </div>
-      <div class="card-hotel d-flex flex-column justify-content-between">
-        <div>
-          <h4>Rio de Janeiro</h4>
-          <p>Hotel ubicado en pleno centro de Rio de Janeiro a pocos metros de la playa</p>
-        </div>
-        <div>
-          <button class="btn btn-primary btn-reserva">Reservar</button>
+        <div class="card-footer">
+          <button class="btn btn-primary btn-reserva"><span class="oi oi-plus"></span> Reservar</button>
         </div>
       </div>
-      <div class="card-hotel d-flex flex-column justify-content-between">
-        <div>
-          <h4>Hotel de Islas Canarias</h4>
-          <p>Hotel ubicado en pleno centro de Rio de Janeiro a pocos metros de la playa</p>
+      <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+        <img class="card-img-top" src="imagenes/hotel-lima.jpg" alt="Hotel Lima">
+        <div class="card-body">
+          <h5 class="card-title">Hotel Lima</h5>
+          <h6 class="card-subtitle text-muted">Perú</h6>
+          <p class="card-text">Hotel ubicado en pleno centro.</p>
         </div>
-        <div>
-          <button class="btn btn-primary btn-reserva">Reservar</button>
-        </div>
-      </div>
-      <div class="card-hotel d-flex flex-column justify-content-between">
-        <div>
-          <h4>Hotel de Madrid</h4>
-          <p>Hotel ubicado en pleno centro de Rio de Janeiro a pocos metros de la playa</p>
-        </div>
-        <div>
-          <button class="btn btn-primary btn-reserva">Reservar</button>
+        <div class="card-footer">
+          <button class="btn btn-primary btn-reserva"><span class="oi oi-plus"></span> Reservar</button>
         </div>
       </div>
-      <div class="card-hotel d-flex flex-column justify-content-between">
-        <div>
-          <h4>Hotel de Hawai</h4>
-          <p>Hotel ubicado en pleno centro de Rio de Janeiro a pocos metros de la playa</p>
+      <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+        <img class="card-img-top" src="imagenes/hotel-rio-de-janeiro.jpg" alt="Hotel Rio de Janeiro">
+        <div class="card-body">
+          <h5 class="card-title">Hotel Rio de Janeiro</h5>
+          <h6 class="card-subtitle text-muted">Brasil</h6>
+          <p class="card-text">Hotel ubicado en pleno centro de Rio de Janeiro a pocos metros de la playa.</p>
         </div>
-        <div>
-          <button class="btn btn-primary btn-reserva">Reservar</button>
+        <div class="card-footer">
+          <button class="btn btn-primary btn-reserva"><span class="oi oi-plus"></span> Reservar</button>
         </div>
       </div>
-      <div class="card-hotel d-flex flex-column justify-content-between">
-        <div>
-          <h4>Hotel de Utila</h4>
-          <p>Hotel ubicado en pleno centro de Rio de Janeiro a pocos metros de la playa</p>
+      <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+        <img class="card-img-top" src="imagenes/hotel-la-paz.jpg" alt="Hotel La Paz">
+        <div class="card-body">
+          <h5 class="card-title">Hotel La Paz</h5>
+          <h6 class="card-subtitle text-muted">Bolivia</h6>
+          <p class="card-text">Hotel ubicado en pleno centro.</p>
         </div>
-        <div>
-          <button class="btn btn-primary btn-reserva">Reservar</button>
+        <div class="card-footer">
+          <button class="btn btn-primary btn-reserva"><span class="oi oi-plus"></span> Reservar</button>
+        </div>
+      </div>
+      <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+        <img class="card-img-top" src="imagenes/hotel-madrid.jpg" alt="Hotel Madrid">
+        <div class="card-body">
+          <h5 class="card-title">Hotel Madrid</h5>
+          <h6 class="card-subtitle text-muted">España</h6>
+          <p class="card-text">Hotel ubicado en pleno centro.</p>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn-primary btn-reserva"><span class="oi oi-plus"></span> Reservar</button>
+        </div>
+      </div>
+      <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+        <img class="card-img-top" src="imagenes/hotel-san-pablo.jpg" alt="Hotel San Pablo">
+        <div class="card-body">
+          <h5 class="card-title">Hotel San Pablo</h5>
+          <h6 class="card-subtitle text-muted">Brasil</h6>
+          <p class="card-text">Hotel ubicado en pleno centro.</p>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn-primary btn-reserva"><span class="oi oi-plus"></span> Reservar</button>
         </div>
       </div>
     </div>
@@ -141,10 +149,10 @@
       </div>
       <div class="col-sm-4 d-flex flex-column align-items-center">
         <address>
-          <h3>Oficina Central</h3>
-          <p>Tegucigalpa, MDC 1241, Honduras</p>
-          <p>+(504) 9480-7460</p>
-          <p>fbarahona280@gmail.com</p>
+          <h3>Oficina central</h3>
+          <p><span class="oi oi-home footer-address-icon"></span>Tegucigalpa, MDC 1241, Honduras</p>
+          <p><span class="oi oi-phone footer-address-icon"></span>+(504) 9480-7460</p>
+          <p><span class="oi oi-inbox footer-address-icon"></span>fbarahona280@gmail.com</p>
         </address>
       </div>
       <div class="col-sm-4 d-flex flex-column align-items-end">
