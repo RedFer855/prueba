@@ -39,16 +39,28 @@
       </ol>
     </nav>
 
-    <div class="row">
+    <div class="row mb-2">
       <div class="col-sm-4">
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#funciona" aria-expanded="false" aria-controls="funciona">¿Cómo funciona?</button>
+      </div>
+      <div class="col-sm-4">
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#donde-reservar" aria-expanded="false" aria-controls="donde-reservar">¿Dónde puedo reservar?</button>
+      </div>
+      <div class="col-sm-4">
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pago" aria-expanded="false" aria-controls="pago">¿Cómo pago?</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4 collapse multi-collapse" id="funciona">
         <h3>¿Cómo funciona?</h3>
         <p>Buscá los hoteles de acuerdo a tu preferencia.</p>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-4 collapse multi-collapse" id="donde-reservar">
         <h3>¿Dónde puedo reservar?</h3>
         <p>Elegí la ciudad que te interese y luego realizá la reserva con tus datos.</p>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-4 collapse multi-collapse" id="pago">
         <h3>¿Cómo pago?</h3>
         <p>Utilizá tu tarjeta favorita.</p>
       </div>
@@ -56,84 +68,181 @@
 
     <hr>
 
-    <img src="imagenes/banner.jpg" class="img-fluid" alt="Responsive image">
+    <div id="carouselControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="imagenes/hotel-buenos-aires.jpg" alt="Primer slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="imagenes/hotel-barcelona.jpg" alt="Segundo slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="imagenes/hotel-san-pablo.jpg" alt="Tercer slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+      </a>
+    </div>
 
     <div class="d-flex flex-wrap flex-row-reverse">
       <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
         <img class="card-img-top" src="imagenes/hotel-barcelona.jpg" alt="Hotel Barcelona">
         <div class="card-body">
-          <h5 class="card-title">Hotel Barcelona</h5>
+          <h5 class="card-title" data-toggle="popover" data-placement="top" title="Promociones" data-content="¡Desayuno buffet incluido en tu estadía!">Hotel Barcelona</h5>
           <h6 class="card-subtitle text-muted">España</h6>
           <p class="card-text">Hotel ubicado en pleno centro de Barcelona a pocos metros de la playa.</p>
         </div>
         <div class="card-footer">
-          <button class="btn btn-primary btn-reserva"><span class="oi oi-plus"></span> Reservar</button>
+          <button type="button" class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reserva"><span class="oi oi-plus"></span> Reservar</button>
         </div>
       </div>
       <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
         <img class="card-img-top" src="imagenes/hotel-buenos-aires.jpg" alt="Hotel Buenos Aires">
         <div class="card-body">
-          <h5 class="card-title">Hotel Buenos Aires</h5>
+          <h5 class="card-title" data-toggle="popover" data-placement="top" title="Promociones" data-content="¡Las primeras reservas cuentan con clases de tango gratis!">Hotel Buenos Aires</h5>
           <h6 class="card-subtitle text-muted">Argentina</h6>
           <p class="card-text">Hotel ubicado en pleno centro.</p>
         </div>
         <div class="card-footer">
-          <button class="btn btn-primary btn-reserva"><span class="oi oi-plus"></span> Reservar</button>
+          <button type="button" class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reserva"><span class="oi oi-plus"></span> Reservar</button>
         </div>
       </div>
       <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
         <img class="card-img-top" src="imagenes/hotel-lima.jpg" alt="Hotel Lima">
         <div class="card-body">
-          <h5 class="card-title">Hotel Lima</h5>
+          <h5 class="card-title" data-toggle="popover" data-placement="top" title="Promociones" data-content="¡Tour gastronómico de cortesía por la ciudad!">Hotel Lima</h5>
           <h6 class="card-subtitle text-muted">Perú</h6>
           <p class="card-text">Hotel ubicado en pleno centro.</p>
         </div>
         <div class="card-footer">
-          <button class="btn btn-primary btn-reserva"><span class="oi oi-plus"></span> Reservar</button>
+          <button type="button" class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reserva"><span class="oi oi-plus"></span> Reservar</button>
         </div>
       </div>
       <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
         <img class="card-img-top" src="imagenes/hotel-rio-de-janeiro.jpg" alt="Hotel Rio de Janeiro">
         <div class="card-body">
-          <h5 class="card-title">Hotel Rio de Janeiro</h5>
+          <h5 class="card-title" data-toggle="popover" data-placement="top" title="Promociones" data-content="¡Trago de bienvenida y acceso al parador de playa!">Hotel Rio de Janeiro</h5>
           <h6 class="card-subtitle text-muted">Brasil</h6>
           <p class="card-text">Hotel ubicado en pleno centro de Rio de Janeiro a pocos metros de la playa.</p>
         </div>
         <div class="card-footer">
-          <button class="btn btn-primary btn-reserva"><span class="oi oi-plus"></span> Reservar</button>
+          <button type="button" class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reserva"><span class="oi oi-plus"></span> Reservar</button>
         </div>
       </div>
       <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
         <img class="card-img-top" src="imagenes/hotel-la-paz.jpg" alt="Hotel La Paz">
         <div class="card-body">
-          <h5 class="card-title">Hotel La Paz</h5>
+          <h5 class="card-title" data-toggle="popover" data-placement="top" title="Promociones" data-content="¡Descuento del 20% en excursiones locales!">Hotel La Paz</h5>
           <h6 class="card-subtitle text-muted">Bolivia</h6>
           <p class="card-text">Hotel ubicado en pleno centro.</p>
         </div>
         <div class="card-footer">
-          <button class="btn btn-primary btn-reserva"><span class="oi oi-plus"></span> Reservar</button>
+          <button type="button" class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reserva"><span class="oi oi-plus"></span> Reservar</button>
         </div>
       </div>
       <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
         <img class="card-img-top" src="imagenes/hotel-madrid.jpg" alt="Hotel Madrid">
         <div class="card-body">
-          <h5 class="card-title">Hotel Madrid</h5>
+          <h5 class="card-title" data-toggle="popover" data-placement="top" title="Promociones" data-content="¡Entradas con descuento para museos!">Hotel Madrid</h5>
           <h6 class="card-subtitle text-muted">España</h6>
           <p class="card-text">Hotel ubicado en pleno centro.</p>
         </div>
         <div class="card-footer">
-          <button class="btn btn-primary btn-reserva"><span class="oi oi-plus"></span> Reservar</button>
+          <button type="button" class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reserva"><span class="oi oi-plus"></span> Reservar</button>
         </div>
       </div>
       <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
         <img class="card-img-top" src="imagenes/hotel-san-pablo.jpg" alt="Hotel San Pablo">
         <div class="card-body">
-          <h5 class="card-title">Hotel San Pablo</h5>
+          <h5 class="card-title" data-toggle="popover" data-placement="top" title="Promociones" data-content="¡Consultá las promociones vigentes!">Hotel San Pablo</h5>
           <h6 class="card-subtitle text-muted">Brasil</h6>
           <p class="card-text">Hotel ubicado en pleno centro.</p>
+          <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
         </div>
         <div class="card-footer">
-          <button class="btn btn-primary btn-reserva"><span class="oi oi-plus"></span> Reservar</button>
+          <button type="button" class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reserva"><span class="oi oi-plus"></span> Reservar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Contacto con el hotel</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Tu email:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Mensaje:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="reserva" tabindex="-1" role="dialog" aria-labelledby="reservaModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="reservaModalLabel">Reservar habitación</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="nombre-reserva" class="col-form-label">Nombre y apellido:</label>
+                <input type="text" class="form-control" id="nombre-reserva" placeholder="Tu nombre">
+              </div>
+              <div class="form-group">
+                <label for="email-reserva" class="col-form-label">Tu email:</label>
+                <input type="email" class="form-control" id="email-reserva" placeholder="ejemplo@correo.com">
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="fecha-ingreso" class="col-form-label">Fecha de ingreso:</label>
+                  <input type="date" class="form-control" id="fecha-ingreso">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="fecha-salida" class="col-form-label">Fecha de salida:</label>
+                  <input type="date" class="form-control" id="fecha-salida">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="huespedes" class="col-form-label">Cantidad de personas:</label>
+                <select class="form-control" id="huespedes">
+                  <option value="1">1 persona</option>
+                  <option value="2">2 personas</option>
+                  <option value="3">3 personas</option>
+                  <option value="4">4 o más personas</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary">Confirmar reserva</button>
+          </div>
         </div>
       </div>
     </div>
@@ -165,8 +274,17 @@
   </footer>
 
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="node_modules/popper.js/dist/popper.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script>
+    $(function () {
+      $("[data-toggle='tooltip']").tooltip();
+      $("[data-toggle='popover']").popover();
+      $('.carousel').carousel({
+        interval: 2000
+      });
+    });
+  </script>
 </body>
 
 </html>

@@ -114,16 +114,50 @@
       </div>
 
       <div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
-        <div class="d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <div class="card-header" style="background-color: blue; color: white;">
-              Tarjetas aceptadas
+        <div class="accordion" id="accordionTarjetas">
+          <div class="card">
+            <div class="card-header" id="headingUno">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseUno" aria-expanded="true" aria-controls="collapseUno">
+                  Tarjeta básica
+                </button>
+              </h5>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Tarjeta básica </li>
-              <li class="list-group-item">Tarjeta VIP</li>
-              <li class="list-group-item">Tarjeta Black</li>
-            </ul>
+            <div id="collapseUno" class="collapse show" aria-labelledby="headingUno" data-parent="#accordionTarjetas">
+              <div class="card-body">
+                Podés pagar en hasta 3 cuotas sin interés con cualquier tarjeta de crédito básica.
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingDos">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseDos" aria-expanded="false" aria-controls="collapseDos">
+                  Tarjeta VIP
+                </button>
+              </h5>
+            </div>
+            <div id="collapseDos" class="collapse" aria-labelledby="headingDos" data-parent="#accordionTarjetas">
+              <div class="card-body">
+                Hasta 6 cuotas sin interés y acceso a beneficios exclusivos durante tu estadía.
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingTres">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTres" aria-expanded="false" aria-controls="collapseTres">
+                  Tarjeta Black
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTres" class="collapse" aria-labelledby="headingTres" data-parent="#accordionTarjetas">
+              <div class="card-body">
+                Hasta 12 cuotas sin interés, traslados bonificados y promociones especiales.
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -160,7 +194,7 @@
   </footer>
 
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="node_modules/popper.js/dist/popper.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
