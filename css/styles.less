@@ -1,0 +1,29 @@
+// Variables de colores
+@amarillo: #ffc107;
+@rojo: #dc3545;
+@verde: #28a745;
+
+// Mixin con definiciones de márgenes, padding y colores
+.bloque-estilizado(@fondo: @verde, @color: #ffffff, @padding: 15px, @margin: 10px 0) {
+  background-color: @fondo;
+  color: @color;
+  padding: @padding;
+  margin: @margin;
+  border-radius: 4px;
+}
+
+// Modificación del jumbotron usando la variable @amarillo
+.jumbotron {
+  background-color: @amarillo;
+  color: #212529;
+  margin-top: 50px;
+}
+
+// Uso del mixin en diferentes estilos
+.promocion-destacada {
+  .bloque-estilizado(@verde, #ffffff, 20px, 15px 0);
+}
+
+.aviso-importante {
+  .bloque-estilizado(@rojo, #ffffff, 12px, 10px 0);
+}

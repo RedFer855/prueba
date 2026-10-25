@@ -8,6 +8,7 @@
   <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
@@ -163,7 +164,7 @@
           <h5 class="card-title" data-toggle="popover" data-placement="top" title="Promociones" data-content="¡Consultá las promociones vigentes!">Hotel San Pablo</h5>
           <h6 class="card-subtitle text-muted">Brasil</h6>
           <p class="card-text">Hotel ubicado en pleno centro.</p>
-          <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
+          <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn">Contacto</button>
         </div>
         <div class="card-footer">
           <button type="button" class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reserva"><span class="oi oi-plus"></span> Reservar</button>
@@ -282,6 +283,28 @@
       $("[data-toggle='popover']").popover();
       $('.carousel').carousel({
         interval: 2000
+      });
+
+      $('#contacto').on('show.bs.modal', function (e) {
+        console.log('El modal contacto se está mostrando');
+        $('#contactoBtn').removeClass('btn-outline-success');
+        $('#contactoBtn').addClass('btn-primary');
+        $('#contactoBtn').prop('disabled', true);
+      });
+
+      $('#contacto').on('shown.bs.modal', function (e) {
+        console.log('El modal contacto se terminó de mostrar');
+      });
+
+      $('#contacto').on('hide.bs.modal', function (e) {
+        console.log('El modal contacto se está ocultando');
+      });
+
+      $('#contacto').on('hidden.bs.modal', function (e) {
+        console.log('El modal contacto se terminó de ocultar');
+        $('#contactoBtn').removeClass('btn-primary');
+        $('#contactoBtn').addClass('btn-outline-success');
+        $('#contactoBtn').prop('disabled', false);
       });
     });
   </script>
